@@ -1,0 +1,38 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class HomePage extends BaseTest {
+	public BaseTest baseTestCall;
+	private By loginLocator = By.xpath("//span[text()='Enter Email/Mobile number']//parent::label//parent::div//input");
+	private By passwordLocator = By.xpath("//span[text()='Enter Password']//parent::label//parent::div//input");
+	private By loginButton = By.xpath("//span[text()='Login']//parent::button");
+
+	public void HomePage() { 
+		baseTestCall = new BaseTest();
+	}
+
+	public WebElement getLoginLocator() {
+		baseTestCall.waitingForYou();
+		return baseTestCall.getElement(loginLocator);
+	}
+
+	public WebElement getPasswordLocator() {
+
+		return baseTestCall.getElement(passwordLocator);
+	}
+
+	public WebElement getLoginButton() {
+
+		return baseTestCall.getElement(loginButton);
+	}
+	
+	public MainPage getCorrectPath(String userName,String passWord) {
+		
+		getLoginLocator().sendKeys(userName);
+		getPasswordLocator().sendKeys(passWord);
+		return new MainPage();
+	}
+
+}

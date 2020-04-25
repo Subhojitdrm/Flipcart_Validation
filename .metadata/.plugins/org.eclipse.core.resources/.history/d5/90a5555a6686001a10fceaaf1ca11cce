@@ -1,0 +1,22 @@
+package com.test;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import com.pages.BaseTest;
+
+public class TestBase {
+	webDriver driver;
+	BaseTest bt=new BaseTest();
+	@BeforeMethod
+	public void setUp() {
+		WebDriver driver=bt.initilize();
+		driver.get("https://www.flipkart.com/");
+	}
+	@AfterMethod
+	public void tearDown() {
+		driver.
+	}
+
+}

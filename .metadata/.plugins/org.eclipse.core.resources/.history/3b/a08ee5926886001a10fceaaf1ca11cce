@@ -1,0 +1,10 @@
+package com.pages;
+
+public class MainPage extends BaseTest{
+	
+	
+	public String getTitles() {
+		return driver.getTitle();
+	}
+
+}

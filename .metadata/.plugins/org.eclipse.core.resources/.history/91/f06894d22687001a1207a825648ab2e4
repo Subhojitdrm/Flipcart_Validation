@@ -1,0 +1,17 @@
+package com.utils;
+
+public class Utilities {
+	
+	public String passWord="Subho.123";
+	
+	//make stronger :
+	//make random upper and lower case
+	public void updatePassWord() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

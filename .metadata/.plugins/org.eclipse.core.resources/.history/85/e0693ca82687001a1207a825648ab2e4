@@ -1,0 +1,13 @@
+package com.utils;
+
+public class Utilities {
+	
+	public String passWord="Subho.123";
+	
+	//make stronger :
+	
+	public void updatePassWord() {
+		
+	}
+
+}

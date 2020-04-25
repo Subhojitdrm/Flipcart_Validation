@@ -1,0 +1,14 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+
+public class HomePage extends BaseTest{
+	
+	private By loginLocator=By.xpath("//span[text()='Enter Email/Mobile number']//parent::label//parent::div//input");
+	private By passwordLocator=By.xpath("//span[text()='Enter Password']//parent::label//parent::div//input");
+	private By loginButton=By.xpath("//span[text()='Login']//parent::button");
+	
+	
+	
+	
+}

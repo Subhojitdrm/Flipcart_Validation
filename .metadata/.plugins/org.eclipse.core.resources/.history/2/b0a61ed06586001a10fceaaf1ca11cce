@@ -1,0 +1,31 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class BaseTest {
+	
+	public WebDriver driver;
+	WebDriverWait wait;
+	public void initilize() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Subhojit\\Downloads\\SupportDriver\\chromedriver.com");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+	
+	}
+	public void waitingForYou(By locator) {
+		wait=new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+	}
+	public WebElement getElement(By locator) {
+		return driver.findElement(locator);
+	}
+	
+	
+
+}

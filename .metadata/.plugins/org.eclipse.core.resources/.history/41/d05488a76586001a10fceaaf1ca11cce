@@ -1,0 +1,17 @@
+package com.test;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class TestBase {
+	BaseTest bt=new BaseTest();
+	@BeforeMethod
+	public void setUp() {
+		
+	}
+	@AfterMethod
+	public void tearDown() {
+		
+	}
+
+}

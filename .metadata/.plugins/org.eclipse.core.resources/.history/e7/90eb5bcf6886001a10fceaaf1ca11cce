@@ -1,0 +1,15 @@
+package com.test;
+
+import org.testng.annotations.Test;
+
+import com.pages.HomePage;
+
+public class TestHomePage extends TestBase{
+	HomePage hp=new HomePage();	
+	
+	@Test
+	public void testForPositiveResponse() {
+		hp.getCorrectPath("Subhojit", "Subho.123");
+		System.out.println("yes");
+	}
+}

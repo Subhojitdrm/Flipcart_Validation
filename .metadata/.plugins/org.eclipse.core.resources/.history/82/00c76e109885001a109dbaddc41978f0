@@ -1,0 +1,9 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+
+public class HomePage extends BaseTest{
+	
+	private By loginLocator=driver.findElement(By.xpath("//a[@href='/account/login?ret=/']"))
+
+}

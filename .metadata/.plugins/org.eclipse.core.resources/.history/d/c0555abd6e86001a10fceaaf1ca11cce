@@ -1,0 +1,24 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+
+public class MainPage extends BaseTest{
+	private By clickCart=By.xpath("//a[@href='/viewcart?otracker=Cart_Icon_Click']");
+	 
+	public WebDriver getClickCart() {
+		getElement(clickCart);
+		return clickCart;
+	}
+
+	public String getTitles() {
+		
+		return driver.getTitle();
+	}
+	
+	
+	
+	public void clickMainKart() {
+		
+	}
+
+}

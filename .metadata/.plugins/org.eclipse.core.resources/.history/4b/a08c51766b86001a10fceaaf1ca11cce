@@ -1,0 +1,24 @@
+package com.utils;
+
+public class practices {
+	public static String r;
+	public void ractices() {
+		r="test this";
+	}
+	public void test02() {
+		
+		System.out.println(r);
+	}
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		practices re=new practices();
+		re.test02();
+
+	}
+
+}
